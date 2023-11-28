@@ -15,28 +15,28 @@ document.addEventListener("DOMContentLoaded",function(){
                     spanError.innerHTML = "";
                     return true;
                 }else{
-                    return spanError.innerHTML = "Numero binario erroneo" 
+                    return spanError.innerHTML = "Numero binario erroneo"
                 }
             case "D":
                 if (/^[0-9]+$/.test(number)) {
                     spanError.innerHTML = "";
-                    return true;         
+                    return true;
                 }else{
-                    return spanError.innerHTML = "Numero Decimal erroneo" 
+                    return spanError.innerHTML = "Numero Decimal erroneo"
                 }
             case "O":
                 if (/^[0-7]+$/.test(number)) {
                     spanError.innerHTML = "";
-                    return true;         
+                    return true;
                 }else{
-                    return spanError.innerHTML = "Numero Octal erroneo" 
+                    return spanError.innerHTML = "Numero Octal erroneo"
                 }
             case "H":
                 if (/^[0-9ABCDEF]+$/i.test(number)) {
                     spanError.innerHTML = "";
-                    return true;         
+                    return true;
                 }else{
-                    return spanError.innerHTML = "Numero Hexadecimal erroneo" 
+                    return spanError.innerHTML = "Numero Hexadecimal erroneo"
                 }
         }
     }
@@ -77,12 +77,12 @@ document.addEventListener("DOMContentLoaded",function(){
     })
     document.getElementById("sumar").addEventListener("click", function(){
         if (compruebainput(operando1.value) && compruebainput(operando2.value)) {
-            resultado.value = sumaTodo(operando1.value, operando2.value);        
+            resultado.value = sumaTodo(operando1.value, operando2.value);
         }
     })
     document.getElementById("multiplicar").addEventListener("click", function(){
         if (compruebainput(operando1.value) && compruebainput(operando2.value)) {
-            resultado.value = multiplicaTodo(operando1.value, operando2.value);        
+            resultado.value = multiplicaTodo(operando1.value, operando2.value);
         }
     })
 })
