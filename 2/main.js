@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded",function(){
     })
     document.getElementById("sumar").addEventListener("click", function(){
         if (compruebainput(operando1.value) && compruebainput(operando2.value)) {
-            resultado.value = sumaTodo(operando1.value, operando2.value);
+            resultado.value = sumaTodo(operando1.value, operando2.value); 
         }
     })
     document.getElementById("multiplicar").addEventListener("click", function(){
